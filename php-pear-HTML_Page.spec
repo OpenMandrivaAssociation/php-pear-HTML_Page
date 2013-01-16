@@ -33,8 +33,6 @@ Plus preliminary support for XHTML 2.0
 - body can be a string, object with toHtml or toString methods or an
   array (can be combined)
 
-This class has in PEAR status: %{_status}.
-
 %prep
 %setup -q -c
 mv package.xml %{upstream_name}-%{version}%{pre}/%{upstream_name}.xml
