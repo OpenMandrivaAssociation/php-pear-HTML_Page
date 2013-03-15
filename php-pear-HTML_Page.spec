@@ -5,7 +5,7 @@
 
 Name:		php-pear-%{upstream_name}
 Version:	2.0.0
-Release:	%mkrel 16
+Release:	17
 Summary:	Base class for XHTML page generation
 License:	PHP License
 Group:		Development/PHP
@@ -16,7 +16,6 @@ Requires(preun): php-pear
 Requires:	php-pear
 BuildArch:	noarch
 BuildRequires:	php-pear
-BuildRoot:	%{_tmppath}/%{name}-%{version}
 
 %description
 The PEAR::HTML_Page package provides a simple interface for generating
@@ -38,7 +37,6 @@ Plus preliminary support for XHTML 2.0
 mv package.xml %{upstream_name}-%{version}%{pre}/%{upstream_name}.xml
 
 %install
-rm -rf %{buildroot}
 
 cd %{upstream_name}-%{version}%{pre}
 pear install --nodeps --packagingroot %{buildroot} %{upstream_name}.xml
@@ -51,7 +49,6 @@ install -d %{buildroot}%{_datadir}/pear/packages
 install -m 644 %{upstream_name}.xml %{buildroot}%{_datadir}/pear/packages
 
 %clean
-rm -rf %{buildroot}
 
 
 
