@@ -4,13 +4,13 @@
 %define		pre 		    RC2
 
 Name:		php-pear-%{upstream_name}
-Version:	2.0.0
-Release:	17
+Version:	2.0.0RC2
+Release:	1
 Summary:	Base class for XHTML page generation
 License:	PHP License
 Group:		Development/PHP
 URL:		http://pear.php.net/package/HTML_Page/
-Source0:	http://download.pear.php.net/package/%{upstream_name}-%{version}%{pre}.tar.bz2
+Source0:	http://download.pear.php.net/package/HTML_Page-%{version}.tgz
 Requires(post): php-pear
 Requires(preun): php-pear
 Requires:	php-pear
@@ -126,4 +126,5 @@ install -m 644 %{upstream_name}.xml %{buildroot}%{_datadir}/pear/packages
 
 * Mon Jul 18 2005 Oden Eriksson <oeriksson@mandriva.com> 2.0.0-1mdk
 - initial Mandriva package (PLD import)
+
 
