@@ -5,7 +5,7 @@
 
 Name:		php-pear-%{upstream_name}
 Version:	2.0.0
-Release:	17
+Release:	18
 Summary:	Base class for XHTML page generation
 License:	PHP License
 Group:		Development/PHP
