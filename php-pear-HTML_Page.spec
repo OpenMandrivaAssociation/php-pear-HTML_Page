@@ -6,7 +6,7 @@
 Summary:	Base class for XHTML page generation
 Name:		php-pear-%{modname}
 Version:	2.0.0
-Release:	27
+Release:	28
 License:	PHP License
 Group:		Development/PHP
 Url:		http://pear.php.net/package/HTML_Page/
@@ -50,4 +50,5 @@ install -m 644 %{modname}.xml %{buildroot}%{_datadir}/pear/packages
 %doc %{modname}-%{version}%{pre}/examples
 %{_datadir}/pear/%{_class}
 %{_datadir}/pear/packages/%{modname}.xml
+%{_datadir}/pear//pear/doc/HTML_Page/examples/Page_*
 
