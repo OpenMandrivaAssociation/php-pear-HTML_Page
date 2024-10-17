@@ -9,7 +9,7 @@ Version:	2.0.0
 Release:	29
 License:	PHP License
 Group:		Development/PHP
-Url:		http://pear.php.net/package/HTML_Page/
+Url:		https://pear.php.net/package/HTML_Page/
 Source0:	http://download.pear.php.net/package/%{modname}-%{version}%{pre}.tar.bz2
 BuildArch:	noarch
 BuildRequires:	php-pear
